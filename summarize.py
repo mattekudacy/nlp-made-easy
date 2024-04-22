@@ -16,12 +16,12 @@ show_pages(
 st.title("Text Summarizer")
 st.write("This app summarizes the input text using Hugging Face's transformers library. It uses the pipeline API for summarization.")
 
-summarizer = pipeline("summarization")
+summarizer = pipeline("summarization", model="sshleifer/distilbart-cnn-12-6")
 
 text = st.text_area("Enter text to summarize")
 if st.button("Generate"):
     if text:
         # summarize the text
-        summary = summarizer(text, min_length=5, max_length=30)
+        summary = summarizer(text)
         # display the summary
         st.write(summary[0]["summary_text"])

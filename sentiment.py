@@ -8,7 +8,7 @@ st.title("Sentiment Analysis")
 st.write("This app analyzes the sentiment of the input text using Hugging Face's transformers library. It uses the pipeline API for sentiment analysis.")
 
 # create a pipeline for sentiment analysis
-sentiment_analyzer = pipeline("sentiment-analysis")
+sentiment_analyzer = pipeline("sentiment-analysis", model="distilbert-base-uncased-finetuned-sst-2-english")
 
 # create a text input for the user to enter text for sentiment analysis
 text = st.text_area("Enter text for sentiment analysis")

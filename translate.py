@@ -6,7 +6,7 @@ import streamlit as st
 st.title("Text Translator (English to French)")
 
 # create a pipeline for translation
-translator = pipeline("translation_en_to_fr")
+translator = pipeline("translation_en_to_fr", model='t5-small')
 
 # create a text input for the user to enter text to translate
 text = st.text_area("Enter text to translate")
