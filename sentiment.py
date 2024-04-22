@@ -1,5 +1,4 @@
 from transformers import pipeline
-from st_pages import Page, add_page_title, show_pages
 import streamlit as st
 
 # create a streamlit app that performs sentiment analysis using Hugging Face's transformers library
