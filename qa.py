@@ -1,5 +1,4 @@
 from transformers import pipeline
-from st_pages import Page, add_page_title, show_pages
 import streamlit as st
 
 st.title("Question Answering System")
