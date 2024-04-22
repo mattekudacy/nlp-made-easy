@@ -1,17 +1,14 @@
 from transformers import pipeline
 import streamlit as st
-from st_pages import Page, add_page_title, show_pages
 
+# create a sidebar for this app that contains hyperlinks to other pages
+st.sidebar.title("Try other models:")
 
-show_pages(
-    [
-        Page("summarize.py", "Text Summarizer", "📚"),
-        Page("qa.py", "Question Answering System", "❓"),
-        # Page("generate.py", "Text Generator (GPT-2)", "📝"),
-        Page("translate.py", "Text Translator (English to French)", "🇫🇷"),
-        Page("sentiment.py", "Sentiment Analysis", "😊"),
-    ]
-)
+with st.sidebar:
+    st.link_button("Text Summarizer 📚", "https://simple-nlp.herokuapp.com/")
+    # st.link_button("Home", "https://simple-nlp.herokuapp.com/")
+    # st.link_button("Home", "https://simple-nlp.herokuapp.com/")
+    # st.link_button("Home", "https://simple-nlp.herokuapp.com/")
 
 st.title("Text Summarizer")
 st.write("This app summarizes the input text using Hugging Face's transformers library. It uses the pipeline API for summarization.")
