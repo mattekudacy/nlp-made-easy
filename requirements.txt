@@ -1,2 +1,4 @@
 st-pages
 transformers
+tensorflow
+pytorch
