@@ -7,7 +7,7 @@ show_pages(
     [
         Page("summarize.py", "Text Summarizer", "📚"),
         Page("qa.py", "Question Answering System", "❓"),
-        Page("generate.py", "Text Generator (GPT-2)", "📝"),
+        # Page("generate.py", "Text Generator (GPT-2)", "📝"),
         Page("translate.py", "Text Translator (English to French)", "🇫🇷"),
         Page("sentiment.py", "Sentiment Analysis", "😊"),
     ]
